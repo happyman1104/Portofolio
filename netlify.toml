@@ -1,0 +1,65 @@
+############################################
+# NETLIFY CONFIG FOR STATIC PORTFOLIO SITE #
+############################################
+
+[build]
+  # Folder yang akan dipublish → root project
+  publish = "./"
+  command = ""
+
+############################################
+# SPA FALLBACK (AMAN UNTUK MULTI-PAGE)
+############################################
+# Jika kamu punya banyak halaman HTML di folder lain,
+# ini memastikan semua route tetap kembali ke index.html
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+############################################
+# SECURITY HEADERS (MELINDUNGI WEBSITE)
+############################################
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    X-XSS-Protection = "1; mode=block"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+############################################
+# ASSET CACHING (OPTIMASI KECEPATAN)
+############################################
+
+# Cache gambar selama 1 tahun
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache CSS dan JS selama 1 bulan
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+
+############################################
+# EXTRA MIME FIX (Untuk beberapa server)
+############################################
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Content-Type = "text/html; charset=UTF-8"
+

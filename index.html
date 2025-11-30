@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio Bayu Ardy Saputra - Web Developer dan Teknik Informatika">
+    <meta name="keywords" content="portfolio, web developer, teknik informatika, bayu ardy saputra">
+    <meta name="author" content="Bayu Ardy Saputra">
+    <title>Portfolio - Bayu Ardy Saputra</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome untuk Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <header>
+        <h1>Bayu Ardy Saputra</h1>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Halo, Saya <span class="highlight">Bayu Ardy Saputra</span></h1>
+            <p class="hero-subtitle">Web Developer & Mahasiswa Teknik Informatika</p>
+            <p class="hero-description">
+                Passionate dalam menciptakan solusi digital yang inovatif dan efisien.
+                Berpengalaman dalam pengembangan web modern dan selalu antusias untuk belajar teknologi baru.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="cta-button">
+                    <i class="fas fa-briefcase"></i> Lihat Proyek
+                </a>
+                <a href="#contact" class="cta-button secondary">
+                    <i class="fas fa-envelope"></i> Hubungi Saya
+                </a>
+            </div>
+                    </div>
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-image">
+            <img src="/images/Picture2.jpg" alt="Bayu Ardy Saputra - Profile Photo">
+        </div>
+        <div class="about-content">
+            <h2>Tentang Saya</h2>
+            <p class="about-intro">
+                Halo! Saya <strong>Bayu Ardy Saputra</strong>, seorang mahasiswa Teknik Informatika yang passionate
+                dalam dunia pengembangan teknologi dan pemrograman.
+            </p>
+            <p class="about-description">
+                Saya memiliki ketertarikan kuat pada pengembangan teknologi, pemrograman, dan pemecahan masalah
+                berbasis sistem digital. Terbiasa bekerja dengan berbagai tools dan bahasa pemrograman, saya senang
+                mengeksplorasi cara-cara baru untuk menciptakan solusi yang efisien dan inovatif.
+            </p>
+            <p class="about-focus">
+                Dengan kemampuan analisis yang baik, semangat belajar tinggi, dan ketelitian dalam mengerjakan tugas,
+                saya siap berkontribusi dalam lingkungan kerja yang dinamis, khususnya pada bidang:
+            </p>
+            <div class="about-skills">
+                <span class="skill-tag"><i class="fas fa-code"></i> Web Development</span>
+                <span class="skill-tag"><i class="fas fa-database"></i> Database Management</span>
+                <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Mobile Development</span>
+                <span class="skill-tag"><i class="fas fa-cloud"></i> Cloud Computing</span>
+                <span class="skill-tag"><i class="fas fa-shield-alt"></i> Cyber Security</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Keahlian Teknis</h2>
+        <div class="skills">
+            <div class="card">
+                <h3>
+                    <svg class="card-icon" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" fill="currentColor"/>
+                    </svg>
+                    HTML5 & CSS3
+                </h3>
+                <p>Markup styling modern dengan semantic HTML dan advanced CSS.</p>
+                <div class="skill-progress" style="--progress: 90%"></div>
+                <small>Expert</small>
+            </div>
+
+            <div class="card">
+                <h3>
+                    <svg class="card-icon" viewBox="0 0 24 24">
+                        <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zm-8.5-2l6-6-1.41-1.41L11 12.17l-3.59-3.58L6 10l4.5 4.5z" fill="currentColor"/>
+                    </svg>
+                    JavaScript
+                </h3>
+                <p>Pengembangan web interaktif dengan ES6+ dan modern framework.</p>
+                <div class="skill-progress" style="--progress: 85%"></div>
+                <small>Advanced</small>
+            </div>
+
+            <div class="card">
+                <h3>
+                    <svg class="card-icon" viewBox="0 0 24 24">
+                        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="currentColor"/>
+                    </svg>
+                    MySQL & Database
+                </h3>
+                <p>Database design, query optimization, dan data management.</p>
+                <div class="skill-progress" style="--progress: 80%"></div>
+                <small>Advanced</small>
+            </div>
+
+            <div class="card">
+                <h3>
+                    <svg class="card-icon" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                    </svg>
+                    Git & GitHub
+                </h3>
+                <p>Version control, collaboration, dan repository management.</p>
+                <div class="skill-progress" style="--progress: 85%"></div>
+                <small>Advanced</small>
+            </div>
+
+            <div class="card">
+                <h3>
+                    <svg class="card-icon" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+                    </svg>
+                    Figma & UI/UX
+                </h3>
+                <p>Design thinking, wireframing, dan prototyping.</p>
+                <div class="skill-progress" style="--progress: 75%"></div>
+                <small>Intermediate</small>
+            </div>
+
+            <div class="card">
+                <h3>
+                    <svg class="card-icon" viewBox="0 0 24 24">
+                        <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" fill="currentColor"/>
+                    </svg>
+                    Frameworks
+                </h3>
+                <p>React, Node.js, Bootstrap, dan modern web frameworks.</p>
+                <div class="skill-progress" style="--progress: 70%"></div>
+                <small>Intermediate</small>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Proyek Unggulan</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Proyek Latihan</h3>
+                <p>Kumpulan proyek-proyek latihan untuk pengembangan skill pemrograman dan web development.</p>
+                <div class="project-links">
+                    <div class="pertemuan-card" onclick="togglePertemuan('pertemuan-2')">
+                        <div class="pertemuan-header">
+                            <i class="fas fa-folder"></i>
+                            <span>Pertemuan 2</span>
+                            <i class="fas fa-chevron-down toggle-icon" id="icon-pertemuan-2"></i>
+                        </div>
+                        <div class="pertemuan-content" id="pertemuan-2">
+                            <div class="project-list">
+                                <a href="Pertemuan2/Lat1.html" class="project-link">
+                                    <i class="fas fa-file-code"></i> Website Film Terkenal
+                                </a>
+                                <a href="Pertemuan2/Lat2.html" class="project-link">
+                                    <i class="fas fa-file-code"></i> Penggunaan Pre Tag
+                                </a>
+                                <a href="Pertemuan2/index.html" class="project-link">
+                                    <i class="fas fa-file-code"></i> Halaman Profil Sederhana
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pertemuan-card" onclick="togglePertemuan('pertemuan-3')">
+                        <div class="pertemuan-header">
+                            <i class="fas fa-folder"></i>
+                            <span>Pertemuan 3</span>
+                            <i class="fas fa-chevron-down toggle-icon" id="icon-pertemuan-3"></i>
+                        </div>
+                        <div class="pertemuan-content" id="pertemuan-3">
+                            <div class="project-list">
+                                <a href="Pertemuan3/Lat1.html" class="project-link">
+                                    <i class="fas fa-file-code"></i> Penggunaan Font
+                                </a>
+                                <a href="Pertemuan3/Lat2.html" class="project-link">
+                                    <i class="fas fa-file-code"></i> Karakter Khusus
+                                </a>
+                                <a href="Pertemuan3/relion.html" class="project-link">
+                                    <i class="fas fa-file-code"></i> Relion Outside Put
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pertemuan-card" onclick="togglePertemuan('pertemuan-4')">
+                        <div class="pertemuan-header">
+                            <i class="fas fa-folder"></i>
+                            <span>Pertemuan 4</span>
+                            <i class="fas fa-chevron-down toggle-icon" id="icon-pertemuan-4"></i>
+                        </div>
+                        <div class="pertemuan-content" id="pertemuan-4">
+                            <div class="project-list">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-folder"></i> Coming Soon
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pertemuan-card" onclick="togglePertemuan('pertemuan-5')">
+                        <div class="pertemuan-header">
+                            <i class="fas fa-folder"></i>
+                            <span>Pertemuan 5</span>
+                            <i class="fas fa-chevron-down toggle-icon" id="icon-pertemuan-5"></i>
+                        </div>
+                        <div class="pertemuan-content" id="pertemuan-5">
+                            <div class="project-list">
+                                <a href="Pertemuan5/index.html" class="project-link">
+                                    <i class="fas fa-file-code"></i> Contoh Hyperlink
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pertemuan-card" onclick="togglePertemuan('pertemuan-6')">
+                        <div class="pertemuan-header">
+                            <i class="fas fa-folder"></i>
+                            <span>Pertemuan 6</span>
+                            <i class="fas fa-chevron-down toggle-icon" id="icon-pertemuan-6"></i>
+                        </div>
+                        <div class="pertemuan-content" id="pertemuan-6">
+                            <div class="project-list">
+                                <a href="Pertemuan6/Lat1.html" class="project-link">
+                                    <i class="fas fa-file-code"></i> Using List
+                                </a>
+                                <a href="Pertemuan6/Lat2.html" class="project-link">
+                                    <i class="fas fa-file-code"></i> Blockbuster Movie
+                                </a>
+                                <a href="Pertemuan6/komponen.html" class="project-link">
+                                    <i class="fas fa-file-code"></i> Komponen Sistem Komputer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pertemuan-card" onclick="togglePertemuan('pertemuan-7')">
+                        <div class="pertemuan-header">
+                            <i class="fas fa-folder"></i>
+                            <span>Pertemuan 7</span>
+                            <i class="fas fa-chevron-down toggle-icon" id="icon-pertemuan-7"></i>
+                        </div>
+                        <div class="pertemuan-content" id="pertemuan-7">
+                            <div class="project-list">
+                                <a href="Pertemuan7/Lat1.html" class="project-link">
+                                    <i class="fas fa-file-code"></i> Belajar HTML Table
+                                </a>
+                                <a href="Pertemuan7/Lat2.html" class="project-link">
+                                    <i class="fas fa-file-code"></i> Penggunaan Tabel Dalam HTML
+                                </a>
+                                <a href="Pertemuan7/" class="project-link">
+                                    <i class="fas fa-file-code"></i> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>Deskripsi project nanti akan ditambahkan.</p>
+            </div>
+            <div class="card">
+                <h3>Project 3</h3>
+                <p>Deskripsi project nanti akan ditambahkan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Hubungi Saya</h2>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>bayuardy623@gmail.com</p>
+                        <a href="mailto:bayuardy623@gmail.com" class="contact-link">Kirim Email</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Instagram</h3>
+                        <p>@bayuardy.s</p>
+                        <a href="https://instagram.com/bayuardy.s" target="_blank" class="contact-link">Follow</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>LinkedIn</h3>
+                        <p>Bayu Ardy Saputra</p>
+                        <a href="#" target="_blank" class="contact-link">Connect</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>GitHub</h3>
+                        <p>happyman1104</p>
+                        <a href="https://github.com/happyman1104" target="_blank" class="contact-link">View Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Kirim Pesan</h3>
+                <form action="#" method="POST" class="contact-form-element">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subjek</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project Collaboration">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Halo, saya tertarik untuk berkolaborasi..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Bayu Ardy Saputra</h3>
+                <p>Web Developer & Mahasiswa Teknik Informatika</p>
+                <p>Passionate dalam menciptakan solusi digital yang inovatif</p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect With Me</h4>
+                <div class="social-links">
+                    <a href="mailto:bayuardy623@gmail.com" target="_blank" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://instagram.com/bayuardy.s" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/happyman1104" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bayu Ardy Saputra. All Rights Reserved.</p>
+            <p>Made with using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
